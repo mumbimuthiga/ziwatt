@@ -94,7 +94,7 @@ function Nav() {
             {/* Center Logo  */}
             <a href="#" className="navbar-brand order-0 d-none d-lg-flex">
               <h2 className="m-0 fw-bold" style={{ letterSpacing: "2px" }}>
-                Ziwatt
+                Ziwatt Gift Shop
               </h2>
             </a>
             {/* Right Icons */}
