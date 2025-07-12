@@ -73,3 +73,23 @@ overflow-x:hidden
 .nav-link:hover:after{
   width: 100%;
 }
+
+/* Nav Media Queries */
+@media(max-width:999px){
+  .nav-menu{
+    padding-top: 5%;
+  }
+  nav-menu li
+  nav-menu li a{
+    width: 100% !important;
+  }
+}
+
+.btn{
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.btn:hover{
+  background-color: var(--prim-color) !important;
+  color: var(--white-color) !important;
+}
