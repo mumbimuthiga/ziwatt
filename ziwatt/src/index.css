@@ -100,7 +100,7 @@ overflow-x:hidden
 }
 .hero-wrap{
   height: 90vh;
-  background: url(assets/hero-bg-1.webp);
+  background: url(assets/bg1.webp);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ overflow-x:hidden
   animation: Anim-zoom-out var(--transition-regular) forwards linear;
 }
 .hero-wrap1{
-  background: url(assets/hero-bg-2.webp) !important;
+  background: url(assets/hero-bg2.webp) !important;
 }
 .hero-wrap3{
   background: url(assets/hero-bg-3.webp) !important;
