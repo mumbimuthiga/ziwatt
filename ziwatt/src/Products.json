@@ -1,29 +1,116 @@
-[{
+[
+    {
     "id":"1",
-    "image":"",
-    "secondImage":"",
-    "Productname":"",
-    "price":"",
-    "oldprice":"",
-    "tag":""
+    "image":"/images/product-1-1.webp",
+    "secondImage":"/images/product-1-2.webp",
+    "Productname":"Product 1",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
 },
 {
     "id":"2",
-    "image":"",
-    "secondImage":"/ima",
-    "Productname":"",
-    "price":"",
-    "oldprice":"",
-    "tag":""
+    "image":"/images/product-2-1.webp",
+    "secondImage":"/images/product-2-2.webp",
+    "Productname":"Product 2",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
 },
 {
     "id":"3",
-    "image":"",
-    "secondImage":"",
-    "Productname":"",
-    "price":"",
-    "oldprice":"",
-    "tag":""
+    "image":"/images/product-3-1.webp",
+    "secondImage":"/images/product-3-2.webp",
+    "Productname":"Product 3",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},
+{
+    "id":"4",
+    "image":"/images/product-4-1.webp",
+    "secondImage":"/images/product-4-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},
+{
+    "id":"5",
+    "image":"/images/product-5-1.webp",
+    "secondImage":"/images/product-5-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},
+{
+    "id":"6",
+    "image":"/images/product-6-1.webp",
+    "secondImage":"/images/product-6-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},
+{
+    "id":"7",
+    "image":"/images/product-7-1.webp",
+    "secondImage":"/images/product-7-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},{
+    "id":"8",
+    "image":"/images/product-8-1.webp",
+    "secondImage":"/images/product-8-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},{
+    "id":"9",
+    "image":"/images/product-9-1.webp",
+    "secondImage":"/images/product-9-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},
+{
+    "id":"10",
+    "image":"/images/product-10-1.webp",
+    "secondImage":"/images/product-10-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},{
+    "id":"11",
+    "image":"/images/product-11-1.webp",
+    "secondImage":"/images/product-11-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},{
+    "id":"12",
+    "image":"/images/product-12-1.webp",
+    "secondImage":"/images/product-12-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
+},
+{
+    "id":"13",
+    "image":"/images/product-13-1.webp",
+    "secondImage":"/images/product-13-2.webp",
+    "Productname":"Product 4",
+    "price":"500",
+    "oldprice":"1000",
+    "tag":"New Arrival"
 }
 ]
 

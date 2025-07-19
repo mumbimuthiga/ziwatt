@@ -177,3 +177,10 @@ overflow-x:hidden
     font-size: 2.8rem;
   }
 }
+
+/* Products Section */
+.section-title p{
+  color:var(--text-color);
+  font-size: 1.2rem !important;
+  font-weight: 500 !important;
+}
