@@ -1,11 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade,Navigation } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
 // Data
 import Products from "../../Products.json";
+import { Link } from "react-router-dom"; 
 
 function index() {
   return (
@@ -102,9 +103,34 @@ function index() {
               <SwiperSlide key={product.id}>
                 <div className="product-item text-center position-relative">
                   <div className="product-image w-100 position-relative overflow-hidden">
-                    <img src={product.image}  className="img-fluid" alt="" />
-                    <img src={product.secondImage}  className="img-fluid" alt="" />
+                    <img src={product.image} className="img-fluid" alt="" />
+                    <img
+                      src={product.secondImage}
+                      className="img-fluid"
+                      alt=""
+                    />
+                    <div className="product-icons gap-3">
+                      <div className="product-icon" title="Add to Wishlist">
+                        <i className="bi bi-heart fs-5"></i>
+                      </div>
+                      <div className="product-icon" title="Add to Wishlist">
+                        <i className="bi bi-cart fs-5"></i>
+                      </div>
+                    </div>
+                    <span
+                      className={`tag badge text-white ${
+                        product.tag === "New" ? "bg-danger" : "bg-success"
+                      }`}
+                    >
+                      {product.tag}
+                    </span>
                   </div>
+                  <Link to={`/product/${product.id}`} className="text-decoration-none text-black">
+                    <div className="product-content pt-3">
+                      <span className="price text-decoration-none">{product.price}</span>
+                      <h3 className="title pt-1">{product.Productname}</h3>
+                    </div>
+                  </Link>
                 </div>
               </SwiperSlide>
             ))}
