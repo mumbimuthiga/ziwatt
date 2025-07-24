@@ -12,18 +12,21 @@ function ProductsDetails() {
   // console.log(id);
   const product = products.find((p) => p.id == id);
   // console.log(product);
-  const [image, setImage] = useState([]);
+
+  //const[image, setImage] = useState("");
   const [mainImage, setMainImage] = useState("");
+  const [images, setImages] = useState([]);
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     if (product) {
-      setImage([product.image, product.secondImage].filter(Boolean));
       setMainImage(product.image);
+      setImages([product.image, product.secondImage].filter(Boolean));
       setQuantity(1);
     }
   }, [product]);
   const colors = ["#000000", "#7B3F00", "#9BBE38"];
+  //  console.log(images);
 
   return (
     <>
@@ -47,14 +50,33 @@ function ProductsDetails() {
           <div className="col-lg-6">
             <div className="d-flex flex-column-reverse flex-md-row mb-4">
               <div className="d-flex flex-column me-3 thumbnail-images">
+                {console.log(images)}
 
+                { images.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img}
+                    alt={product.Productname}
+                    onClick={() => setImages(img)}
+                    className={`img-thumbnail ${
+                      mainImage === img ? "border-dark" : ""
+                    }`}
+                    style={{
+                      width: 60,
+                      height: 60,
+                      cursor: "pointer",
+                      objectFit: "cover",
+                      border: "1px solid red",
+                    }}
+                  />
+                ))}
               </div>
-
+              {mainImage && (
+                <img src={mainImage} className="img-fluid" alt="" />
+              )}
             </div>
           </div>
-          
         </div>
-
       </div>
     </>
   );
