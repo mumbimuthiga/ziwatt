@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -66,9 +67,9 @@ function Nav() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="http://" className="nav-link">
+                <Link to="/product" className="nav-link">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a href="http://" className="nav-link">
