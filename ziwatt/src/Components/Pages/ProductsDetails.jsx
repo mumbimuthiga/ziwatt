@@ -25,7 +25,7 @@ function ProductsDetails() {
       setQuantity(1);
     }
   }, [product]);
-  const colors = ["#000000", "#7B3F00", "#9BBE38"];
+  const colors = ["#7B3F00","#000000", "#9BBE38"];
   //  console.log(images);
 
   return (
@@ -52,7 +52,7 @@ function ProductsDetails() {
               <div className="d-flex flex-column me-3 thumbnail-images">
                 {console.log(images)}
 
-                { images.map((img, idx) => (
+                {images.map((img, idx) => (
                   <img
                     key={idx}
                     src={img}
@@ -74,6 +74,47 @@ function ProductsDetails() {
               {mainImage && (
                 <img src={mainImage} className="img-fluid" alt="" />
               )}
+            </div>
+          </div>
+
+          <div className="col-lg-6">
+            <h5 className="fw-bold">{product.price}</h5>
+            <h2 className="fw-semibold mb-4">{product.Productname}</h2>
+            <p className="fw-semibold mb-1">Color Black</p>
+            <div className="d-flex gap-2 mb-4">
+              
+              {
+                console.log(colors)}
+              {colors.map((color, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    backgroundColor: color ,
+                    width: 25,
+                    height: 25,
+                    borderRadius: "50%",
+                    cursor: "pointer",
+                    border: "1px solid #ccc",
+                  }}
+                ></div>
+              ))}
+            </div>
+            <p className="fw-semibold mb-1">Quantity</p>
+            <div className="d-flex align-items-center gap-3 quantity">
+              <div
+                className="d-flex align-items-center Quantity-box"
+                style={{ maxwidth: "200px" }}
+              >
+                <button
+                  className="btn-count border-0"
+                  onClick={() => setQuantity((q) => Math.max(1, q - 1))}
+                >-</button>
+                <input type="text" className="form-control text-center mx-2" value={quantity} readOnly />
+                    <button
+                  className="btn-count border-0"
+                  onClick={() => setQuantity((q) => Math.max(1, q + 1))}
+                >+</button>
+              </div>
             </div>
           </div>
         </div>
