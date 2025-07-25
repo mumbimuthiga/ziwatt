@@ -25,7 +25,7 @@ function ProductsDetails() {
       setQuantity(1);
     }
   }, [product]);
-  const colors = ["#7B3F00","#000000", "#9BBE38"];
+  const colors = ["#7B3F00", "#000000", "#9BBE38"];
   //  console.log(images);
 
   return (
@@ -82,14 +82,12 @@ function ProductsDetails() {
             <h2 className="fw-semibold mb-4">{product.Productname}</h2>
             <p className="fw-semibold mb-1">Color Black</p>
             <div className="d-flex gap-2 mb-4">
-              
-              {
-                console.log(colors)}
+              {console.log(colors)}
               {colors.map((color, idx) => (
                 <div
                   key={idx}
                   style={{
-                    backgroundColor: color ,
+                    backgroundColor: color,
                     width: 25,
                     height: 25,
                     borderRadius: "50%",
@@ -108,14 +106,37 @@ function ProductsDetails() {
                 <button
                   className="btn-count border-0"
                   onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                >-</button>
-                <input type="text" className="form-control text-center mx-2" value={quantity} readOnly />
-                    <button
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  className="form-control text-center mx-2"
+                  value={quantity}
+                  readOnly
+                />
+                <button
                   className="btn-count border-0"
                   onClick={() => setQuantity((q) => Math.max(1, q + 1))}
-                >+</button>
+                >
+                  +
+                </button>
               </div>
+              <button className="btn-custome2 w-100">Add to Cart</button>
             </div>
+            <button className="btn-custome2 w-100 border-0">Buy it now</button>
+            <hr />
+            <p>
+              <strong>Vendor:</strong>Vendor 4
+            </p>
+            <p>
+              <strong>Vendor</strong>It has roots in a piece of classical Latin
+              literature from 45 BC, making it over 2000 years old.
+            </p>
+
+            <p>
+              <strong>SKU</strong>501
+            </p>
           </div>
         </div>
       </div>
